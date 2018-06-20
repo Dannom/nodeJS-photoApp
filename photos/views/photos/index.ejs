@@ -1,0 +1,27 @@
+<% include ../templates/head %>
+
+
+<div id="photos">
+    <div class="row">
+        <% photos.forEach(function(photo){ %>
+        <div class="col-md-4 col-sm-6">
+            <div class="card bg-primary">
+                <div class="card-header  text-light">
+                    
+                    <h5 class="card-title"> <%= photo.title %></h5>
+                    
+                    <a href="/delete/<%= photo.id %>/"><img class= "trash-icon" src="/images/trashicon1.png" alt=""></a>
+                </div>
+
+                <div class="card-body bg-light">
+                    <a href="/download/<%= photo.id %>/"><img src="/images/<%= photo.path %>" class="photo"></a>
+                </div>
+               
+            </div>
+        </div>
+        <% }) %>
+    </div>
+
+</div>
+
+<% include ../templates/footer %>

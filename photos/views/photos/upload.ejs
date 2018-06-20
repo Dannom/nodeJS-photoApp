@@ -1,0 +1,19 @@
+<% include ../templates/head %>
+
+    <div class="form-group" style="margin-top:2em">
+        <form method="post" enctype="multipart/form-data" class="upload-form" action="/upload">
+            <label for="img-name">Insert caption or title</label>
+            <br>
+            <input type="text" class="form-control img-name" name="photoTitle">
+            <br>
+            <label for="img-file">Choose a photo to upload</label> 
+            <br>
+            <input type="file" class="form-control img-file" name="photoPath" class="img-file" required>
+            <br>
+            <button type="submit" class="btn btn-primary">Upload</button>
+
+
+        </form>
+    </div>
+
+<% include ../templates/footer %>
