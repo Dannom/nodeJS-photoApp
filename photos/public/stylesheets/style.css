@@ -41,7 +41,30 @@ a:hover {
 }
 
 
+.jumpingHead {
+    position: fixed;
+    height:200px;
+    width:200px;
+    top:200px;
+    left:400px;    
+    z-index: 100;
+    animation: jump 0.7s linear 0s infinite alternate;
+    -webkit-animation: jump 0.7s linear 0s infinite alternate;
+    
+}
 
+.cloudGreet{
+
+    position: fixed;
+    height:200px;
+    width:300px;
+    top:150px;
+    left:600px;
+    margin:auto;
+    z-index: 100;
+    animation: jump 0.7s linear 0s infinite alternate;
+
+}
 
 .photo {
     width: 100%;
@@ -60,4 +83,24 @@ a:hover {
 
 
 
+@keyframes jump {
+    from {
+        transform: translateY(0);
+        
+    }
 
+    to{
+        transform: translateY(20px) scale(1.1)
+    }
+}
+
+
+@-webkit-keyframes jump {
+    from {
+        -webkit-transform: translateY(0);
+    }
+
+    to{
+        -webkit-transform: translateY(20px)
+    }
+}
