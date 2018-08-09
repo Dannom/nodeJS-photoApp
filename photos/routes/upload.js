@@ -52,11 +52,6 @@ exports.submit = function (req, res, next) {
         path: fileName,
         title: photoTitle,
     });
-    
-
-
-
-
 
     console.log(req.file);
     console.log(req.originalname);
